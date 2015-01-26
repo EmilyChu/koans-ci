@@ -1,6 +1,13 @@
 require "minitest/autorun"
 
 def triangle a,b,c
+  if a==b && b==c
+    return :equilateral
+  elsif a!=b && b!=c && a!=c
+    return :scalene
+  else
+    return :isosceles
+  end
 end
 
 class TestMeme < Minitest::Test
