@@ -1,0 +1,8 @@
+class Triangles
+   @@no_of_triangles=0
+   def initialize(a, b, c)
+      @a=a
+      @b=b
+      @c=c
+   end
+end
